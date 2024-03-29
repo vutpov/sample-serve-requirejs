@@ -1,0 +1,18 @@
+{
+  "name": "test-require",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm concurrently \"pnpm dev:front \" \"pnpm dev:back \" ",
+    "dev:front": "cd front && pnpm dev",
+    "dev:back": "cd back && pnpm start:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "pm2": "^5.3.1"
+  }
+}
